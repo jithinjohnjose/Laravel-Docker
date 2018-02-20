@@ -38,5 +38,9 @@ services:
     ports:
         - "33061:3306"
 
+  # redis
+  cache:
+    image: redis:3.0-alpine
+
 volumes:
   dbdata:
