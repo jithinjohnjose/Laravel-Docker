@@ -1,7 +1,6 @@
-Laravel + Docker (Nginx, php-fpm 7.1, MySql, Redis)
+# Laravel + Docker (Nginx, php-fpm 7.1, MySql, Redis)
 
-
-Step 1 — grab the latest Laravel release
+# Step 1 — grab the latest Laravel release
 
   a) sudo curl -L https://github.com/laravel/laravel/archive/v5.3.16.tar.gz | tar xz
   b) mv laravel-5.3.16 my-site
@@ -18,7 +17,6 @@ Step 3 — create the development docker-compose.yml file
 version: '2'
 services:
 
-  # The Application
   app:
     build:
       context: ./
@@ -57,7 +55,7 @@ services:
 volumes:
   dbdata:
   
-Step 4 — Create app.dockerfile, web.dockerfile, nginx configuration and add following
+# Step 4 — Create app.dockerfile, web.dockerfile, nginx configuration and add following
   
   a) sudo vim web.dockerfile
   
@@ -94,9 +92,9 @@ Step 4 — Create app.dockerfile, web.dockerfile, nginx configuration and add fo
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param PATH_INFO $fastcgi_path_info;
     }
-}
+   }
  
- Step 5 — Build the images and prepare the Laravel Application
+ # Step 5 — Build the images and prepare the Laravel Application
    
    a) sudo docker-compose run --build -d
 
