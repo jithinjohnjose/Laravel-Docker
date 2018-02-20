@@ -24,7 +24,7 @@ Step 4 — Create app.dockerfile, web.dockerfile and nginx configuration in lara
  
 Step 5 — Build the images and prepare the Laravel Application
    
-    a) sudo docker-compose run --build -d
+    a) sudo docker-compose up --build -d
 
     b) sudo mv .env.example .env
    
