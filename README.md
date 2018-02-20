@@ -1,4 +1,4 @@
-# Laravel + Docker (Nginx, php-fpm 7.1, MySql, Redis)
+## Laravel + Docker (Nginx, php-fpm 7.1, MySql, Redis)
 
 # Step 1 — grab the latest Laravel release
 
