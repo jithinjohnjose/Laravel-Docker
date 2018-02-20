@@ -3,7 +3,7 @@
 Step 1 — grab the latest Laravel release
 
     a) sudo curl -L https://github.com/laravel/laravel/archive/v5.3.16.tar.gz | tar xz
-    b) mv laravel-5.3.16 my-site
+    b) sudo mv laravel-5.3.16 my-site
 
 Step 2 — Install dependencies
 
