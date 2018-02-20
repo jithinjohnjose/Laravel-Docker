@@ -14,7 +14,7 @@ Step 3 — create the development docker-compose.yml file
 
     a) Create docker-compose.yml ( Check in files)
   
-Step 4 — Create app.dockerfile, web.dockerfile, nginx configuration and add following
+Step 4 — Create app.dockerfile, web.dockerfile and nginx configuration in laravel directory 
   
     a) create web.dockerfile ( Check content in files added )
   
