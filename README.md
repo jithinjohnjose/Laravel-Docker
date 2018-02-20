@@ -2,19 +2,19 @@
 
 # Step 1 — grab the latest Laravel release
 
-  a) sudo curl -L https://github.com/laravel/laravel/archive/v5.3.16.tar.gz | tar xz
-  b) mv laravel-5.3.16 my-site
+a) sudo curl -L https://github.com/laravel/laravel/archive/v5.3.16.tar.gz | tar xz
+b) mv laravel-5.3.16 my-site
 
-Step 2 — Install dependencies
+# Step 2 — Install dependencies
 
-  a) cd my-site
-  b) sudo docker run --rm -v $(pwd):/app composer/composer install
+a) cd my-site
+b) sudo docker run --rm -v $(pwd):/app composer/composer install
 
-Step 3 — create the development docker-compose.yml file
+# Step 3 — create the development docker-compose.yml file
 
-  a) sudo vim docker-compose.yml and add following
+a) sudo vim docker-compose.yml and add following
 
-version: '2'
+" version: '2'
 services:
 
   app:
@@ -53,7 +53,7 @@ services:
         - "33061:3306"
 
 volumes:
-  dbdata:
+  dbdata: "
   
 # Step 4 — Create app.dockerfile, web.dockerfile, nginx configuration and add following
   
